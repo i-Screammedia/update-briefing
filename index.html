@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AI 디지털 교육자료 2026년 2학기 주요 기능 업데이트 브리핑 — 상위 결정자용" />
-  <title>기능 업데이트 브리핑</title>
+  <meta name="description" content="AI 디지털 교육자료 2026년 2학기 주요 기능 업데이트를 한눈에 확인하는 브리핑 페이지입니다." />
+  <title>AI 디지털 교육자료 | 2026년 2학기 기능 업데이트 브리핑</title>
   <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="styles_copy.css" />
@@ -509,9 +509,16 @@
     <button type="button" class="gallery-lightbox__close" id="galleryLightboxClose" aria-label="닫기">×</button>
     <button type="button" class="gallery-lightbox__nav gallery-lightbox__nav--prev" id="galleryLightboxPrev" aria-label="이전 이미지">‹</button>
     <button type="button" class="gallery-lightbox__nav gallery-lightbox__nav--next" id="galleryLightboxNext" aria-label="다음 이미지">›</button>
-    <div class="gallery-lightbox__viewport">
+    <div class="gallery-lightbox__viewport" id="galleryLightboxViewport">
       <div class="gallery-lightbox__track" id="galleryLightboxTrack"></div>
     </div>
+    <div class="gallery-lightbox__zoombar">
+      <button type="button" class="gallery-lightbox__zoom-btn" id="galleryZoomOut" aria-label="축소">−</button>
+      <span class="gallery-lightbox__zoom-level" id="galleryZoomLevel">100%</span>
+      <button type="button" class="gallery-lightbox__zoom-btn" id="galleryZoomIn" aria-label="확대">+</button>
+      <button type="button" class="gallery-lightbox__zoom-reset" id="galleryZoomReset">원래 크기</button>
+    </div>
+    <p class="gallery-lightbox__zoom-hint">Ctrl + 마우스 휠 또는 이미지 위 휠로 확대/축소 · 드래그로 이동 · 더블클릭 확대</p>
     <p class="gallery-lightbox__counter" id="galleryLightboxCounter">1 / 1</p>
     <p class="gallery-lightbox__caption" id="galleryLightboxCaption"></p>
   </div>
